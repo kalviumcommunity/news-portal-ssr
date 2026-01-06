@@ -23,3 +23,28 @@ SSR ensures freshness but increases server cost.
 ISR provides the best balance for most shared content.
 
 If the app had 10× more users, SSR would be limited to only critical pages, while static and hybrid rendering would handle most traffic.
+
+## Environment Segregation & Secure Secret Management
+
+### Overview
+This project follows strict environment segregation to ensure safe, reliable, and predictable deployments. Separate configurations are maintained for development, staging, and production to prevent accidental data corruption, secret leakage, and downtime.
+
+---
+
+### Supported Environments
+
+| Environment | Purpose |
+|------------|---------|
+| Development | Local development and testing |
+| Staging | Pre-production validation |
+| Production | Live system for end users |
+
+Each environment operates in isolation and uses its own configuration and infrastructure.
+
+---
+
+### Environment Configuration Files
+
+The project uses environment-specific configuration files:
+
+
